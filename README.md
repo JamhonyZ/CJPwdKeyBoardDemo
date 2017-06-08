@@ -16,7 +16,7 @@
         NSLog(@"忘记密码");
     }];
     [[CJPwdKeyBoardManager shareInstance] showKeyBoard];
-    [[CJPwdKeyBoardManager shareInstance] closeBlock];
+    [[CJPwdKeyBoardManager shareInstance] hiddenKeyBoard];
     */
   
 
