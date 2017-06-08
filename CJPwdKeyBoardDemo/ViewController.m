@@ -74,7 +74,7 @@
     [[CJPwdKeyBoardManager shareInstance] showKeyBoard];
 }
 - (void)closeKeyBoardAction {
-    [[CJPwdKeyBoardManager shareInstance] closeBlock];
+    [[CJPwdKeyBoardManager shareInstance] hiddenKeyBoard];
 }
 
 - (void)didReceiveMemoryWarning {
