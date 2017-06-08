@@ -56,8 +56,10 @@
     
     //注册
     [[CJPwdKeyBoardManager shareInstance] configKeyBoard:self pwdTitle:@"测试输入密码"];
+    __weak typeof(self) weakSelf = self;
     [CJPwdKeyBoardManager shareInstance].verificationBlock = ^(UITextField *tfd){
-        _pwdLabel.text = tfd.text;
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        strongSelf.pwdLabel.text = tfd.text;
     };
     
 /*
