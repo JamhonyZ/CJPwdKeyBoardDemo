@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDFDE5E91EE8DECD005BD6B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE5E81EE8DECD005BD6B3 /* main.m */; };
+		CDFDE5EC1EE8DECD005BD6B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE5EB1EE8DECD005BD6B3 /* AppDelegate.m */; };
+		CDFDE5EF1EE8DECD005BD6B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE5EE1EE8DECD005BD6B3 /* ViewController.m */; };
+		CDFDE5F21EE8DECE005BD6B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFDE5F01EE8DECE005BD6B3 /* Main.storyboard */; };
+		CDFDE5F41EE8DECE005BD6B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFDE5F31EE8DECE005BD6B3 /* Assets.xcassets */; };
+		CDFDE5F71EE8DECE005BD6B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFDE5F51EE8DECE005BD6B3 /* LaunchScreen.storyboard */; };
+		CDFDE6021EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE6011EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests.m */; };
+		CDFDE60D1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE60C1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.m */; };
+		CDFDE61D1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE61C1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m */; };
+		CDFDE6231EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE6201EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m */; };
+		CDFDE6241EE8E02D005BD6B3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE6221EE8E02D005BD6B3 /* UIView+Frame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDFDE5FE1EE8DECE005BD6B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFDE5DC1EE8DECD005BD6B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDFDE5E31EE8DECD005BD6B3;
+			remoteInfo = CJPwdKeyBoardDemo;
+		};
+		CDFDE6091EE8DECE005BD6B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFDE5DC1EE8DECD005BD6B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDFDE5E31EE8DECD005BD6B3;
+			remoteInfo = CJPwdKeyBoardDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDFDE5E41EE8DECD005BD6B3 /* CJPwdKeyBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJPwdKeyBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFDE5E81EE8DECD005BD6B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDFDE5EA1EE8DECD005BD6B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDFDE5EB1EE8DECD005BD6B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDFDE5ED1EE8DECD005BD6B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CDFDE5EE1EE8DECD005BD6B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDFDE5F11EE8DECE005BD6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDFDE5F31EE8DECE005BD6B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDFDE5F61EE8DECE005BD6B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDFDE5F81EE8DECE005BD6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFDE5FD1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJPwdKeyBoardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFDE6011EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJPwdKeyBoardDemoTests.m; sourceTree = "<group>"; };
+		CDFDE6031EE8DECE005BD6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFDE6081EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJPwdKeyBoardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFDE60C1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJPwdKeyBoardDemoUITests.m; sourceTree = "<group>"; };
+		CDFDE60E1EE8DECE005BD6B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFDE61B1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJPwdKeyBoardManager.h; sourceTree = "<group>"; };
+		CDFDE61C1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPwdKeyBoardManager.m; sourceTree = "<group>"; };
+		CDFDE61F1EE8E02D005BD6B3 /* UIButton+EnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeEdge.h"; sourceTree = "<group>"; };
+		CDFDE6201EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
+		CDFDE6211EE8E02D005BD6B3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		CDFDE6221EE8E02D005BD6B3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDFDE5E11EE8DECD005BD6B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDE5FA1EE8DECE005BD6B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDE6051EE8DECE005BD6B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDFDE5DB1EE8DECD005BD6B3 = {
+			isa = PBXGroup;
+			children = (
+				CDFDE5E61EE8DECD005BD6B3 /* CJPwdKeyBoardDemo */,
+				CDFDE6001EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests */,
+				CDFDE60B1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests */,
+				CDFDE5E51EE8DECD005BD6B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFDE5E51EE8DECD005BD6B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDE5E41EE8DECD005BD6B3 /* CJPwdKeyBoardDemo.app */,
+				CDFDE5FD1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests.xctest */,
+				CDFDE6081EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFDE5E61EE8DECD005BD6B3 /* CJPwdKeyBoardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDE61E1EE8E02D005BD6B3 /* CJCategory */,
+				CDFDE61A1EE8DF5B005BD6B3 /* CJPwdKBManager */,
+				CDFDE5EA1EE8DECD005BD6B3 /* AppDelegate.h */,
+				CDFDE5EB1EE8DECD005BD6B3 /* AppDelegate.m */,
+				CDFDE5ED1EE8DECD005BD6B3 /* ViewController.h */,
+				CDFDE5EE1EE8DECD005BD6B3 /* ViewController.m */,
+				CDFDE5F01EE8DECE005BD6B3 /* Main.storyboard */,
+				CDFDE5F31EE8DECE005BD6B3 /* Assets.xcassets */,
+				CDFDE5F51EE8DECE005BD6B3 /* LaunchScreen.storyboard */,
+				CDFDE5F81EE8DECE005BD6B3 /* Info.plist */,
+				CDFDE5E71EE8DECD005BD6B3 /* Supporting Files */,
+			);
+			path = CJPwdKeyBoardDemo;
+			sourceTree = "<group>";
+		};
+		CDFDE5E71EE8DECD005BD6B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDE5E81EE8DECD005BD6B3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDFDE6001EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDE6011EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests.m */,
+				CDFDE6031EE8DECE005BD6B3 /* Info.plist */,
+			);
+			path = CJPwdKeyBoardDemoTests;
+			sourceTree = "<group>";
+		};
+		CDFDE60B1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDE60C1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.m */,
+				CDFDE60E1EE8DECE005BD6B3 /* Info.plist */,
+			);
+			path = CJPwdKeyBoardDemoUITests;
+			sourceTree = "<group>";
+		};
+		CDFDE61A1EE8DF5B005BD6B3 /* CJPwdKBManager */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDE61B1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.h */,
+				CDFDE61C1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m */,
+			);
+			path = CJPwdKBManager;
+			sourceTree = "<group>";
+		};
+		CDFDE61E1EE8E02D005BD6B3 /* CJCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDE61F1EE8E02D005BD6B3 /* UIButton+EnlargeEdge.h */,
+				CDFDE6201EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m */,
+				CDFDE6211EE8E02D005BD6B3 /* UIView+Frame.h */,
+				CDFDE6221EE8E02D005BD6B3 /* UIView+Frame.m */,
+			);
+			path = CJCategory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDFDE5E31EE8DECD005BD6B3 /* CJPwdKeyBoardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFDE6111EE8DECE005BD6B3 /* Build configuration list for PBXNativeTarget "CJPwdKeyBoardDemo" */;
+			buildPhases = (
+				CDFDE5E01EE8DECD005BD6B3 /* Sources */,
+				CDFDE5E11EE8DECD005BD6B3 /* Frameworks */,
+				CDFDE5E21EE8DECD005BD6B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJPwdKeyBoardDemo;
+			productName = CJPwdKeyBoardDemo;
+			productReference = CDFDE5E41EE8DECD005BD6B3 /* CJPwdKeyBoardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDFDE5FC1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFDE6141EE8DECE005BD6B3 /* Build configuration list for PBXNativeTarget "CJPwdKeyBoardDemoTests" */;
+			buildPhases = (
+				CDFDE5F91EE8DECE005BD6B3 /* Sources */,
+				CDFDE5FA1EE8DECE005BD6B3 /* Frameworks */,
+				CDFDE5FB1EE8DECE005BD6B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDFDE5FF1EE8DECE005BD6B3 /* PBXTargetDependency */,
+			);
+			name = CJPwdKeyBoardDemoTests;
+			productName = CJPwdKeyBoardDemoTests;
+			productReference = CDFDE5FD1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDFDE6071EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFDE6171EE8DECE005BD6B3 /* Build configuration list for PBXNativeTarget "CJPwdKeyBoardDemoUITests" */;
+			buildPhases = (
+				CDFDE6041EE8DECE005BD6B3 /* Sources */,
+				CDFDE6051EE8DECE005BD6B3 /* Frameworks */,
+				CDFDE6061EE8DECE005BD6B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDFDE60A1EE8DECE005BD6B3 /* PBXTargetDependency */,
+			);
+			name = CJPwdKeyBoardDemoUITests;
+			productName = CJPwdKeyBoardDemoUITests;
+			productReference = CDFDE6081EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFDE5DC1EE8DECD005BD6B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = cjzzh;
+				TargetAttributes = {
+					CDFDE5E31EE8DECD005BD6B3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					CDFDE5FC1EE8DECE005BD6B3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CDFDE5E31EE8DECD005BD6B3;
+					};
+					CDFDE6071EE8DECE005BD6B3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CDFDE5E31EE8DECD005BD6B3;
+					};
+				};
+			};
+			buildConfigurationList = CDFDE5DF1EE8DECD005BD6B3 /* Build configuration list for PBXProject "CJPwdKeyBoardDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDFDE5DB1EE8DECD005BD6B3;
+			productRefGroup = CDFDE5E51EE8DECD005BD6B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDFDE5E31EE8DECD005BD6B3 /* CJPwdKeyBoardDemo */,
+				CDFDE5FC1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests */,
+				CDFDE6071EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDFDE5E21EE8DECD005BD6B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDE5F71EE8DECE005BD6B3 /* LaunchScreen.storyboard in Resources */,
+				CDFDE5F41EE8DECE005BD6B3 /* Assets.xcassets in Resources */,
+				CDFDE5F21EE8DECE005BD6B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDE5FB1EE8DECE005BD6B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDE6061EE8DECE005BD6B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDFDE5E01EE8DECD005BD6B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDE6241EE8E02D005BD6B3 /* UIView+Frame.m in Sources */,
+				CDFDE5EF1EE8DECD005BD6B3 /* ViewController.m in Sources */,
+				CDFDE61D1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m in Sources */,
+				CDFDE6231EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m in Sources */,
+				CDFDE5EC1EE8DECD005BD6B3 /* AppDelegate.m in Sources */,
+				CDFDE5E91EE8DECD005BD6B3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDE5F91EE8DECE005BD6B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDE6021EE8DECE005BD6B3 /* CJPwdKeyBoardDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFDE6041EE8DECE005BD6B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFDE60D1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDFDE5FF1EE8DECE005BD6B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDFDE5E31EE8DECD005BD6B3 /* CJPwdKeyBoardDemo */;
+			targetProxy = CDFDE5FE1EE8DECE005BD6B3 /* PBXContainerItemProxy */;
+		};
+		CDFDE60A1EE8DECE005BD6B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDFDE5E31EE8DECD005BD6B3 /* CJPwdKeyBoardDemo */;
+			targetProxy = CDFDE6091EE8DECE005BD6B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDFDE5F01EE8DECE005BD6B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDFDE5F11EE8DECE005BD6B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDFDE5F51EE8DECE005BD6B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDFDE5F61EE8DECE005BD6B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDFDE60F1EE8DECE005BD6B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDFDE6101EE8DECE005BD6B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDFDE6121EE8DECE005BD6B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CJPwdKeyBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CJPwdKeyBoard.www;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDFDE6131EE8DECE005BD6B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CJPwdKeyBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CJPwdKeyBoard.www;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDFDE6151EE8DECE005BD6B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CJPwdKeyBoardDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xjcard.www.CJPwdKeyBoardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJPwdKeyBoardDemo.app/CJPwdKeyBoardDemo";
+			};
+			name = Debug;
+		};
+		CDFDE6161EE8DECE005BD6B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CJPwdKeyBoardDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xjcard.www.CJPwdKeyBoardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJPwdKeyBoardDemo.app/CJPwdKeyBoardDemo";
+			};
+			name = Release;
+		};
+		CDFDE6181EE8DECE005BD6B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CJPwdKeyBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xjcard.www.CJPwdKeyBoardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CJPwdKeyBoardDemo;
+			};
+			name = Debug;
+		};
+		CDFDE6191EE8DECE005BD6B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CJPwdKeyBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xjcard.www.CJPwdKeyBoardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CJPwdKeyBoardDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDFDE5DF1EE8DECD005BD6B3 /* Build configuration list for PBXProject "CJPwdKeyBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDE60F1EE8DECE005BD6B3 /* Debug */,
+				CDFDE6101EE8DECE005BD6B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFDE6111EE8DECE005BD6B3 /* Build configuration list for PBXNativeTarget "CJPwdKeyBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDE6121EE8DECE005BD6B3 /* Debug */,
+				CDFDE6131EE8DECE005BD6B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFDE6141EE8DECE005BD6B3 /* Build configuration list for PBXNativeTarget "CJPwdKeyBoardDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDE6151EE8DECE005BD6B3 /* Debug */,
+				CDFDE6161EE8DECE005BD6B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFDE6171EE8DECE005BD6B3 /* Build configuration list for PBXNativeTarget "CJPwdKeyBoardDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFDE6181EE8DECE005BD6B3 /* Debug */,
+				CDFDE6191EE8DECE005BD6B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFDE5DC1EE8DECD005BD6B3 /* Project object */;
+}
