@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD21E67D1EEA8A3F0086B35A /* CJPwdKeyBoard_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJPwdKeyBoard_Header.h; sourceTree = "<group>"; };
 		CDFDE5E41EE8DECD005BD6B3 /* CJPwdKeyBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJPwdKeyBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFDE5E81EE8DECD005BD6B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDFDE5EA1EE8DECD005BD6B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 			children = (
 				CDFDE61B1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.h */,
 				CDFDE61C1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m */,
+				CD21E67D1EEA8A3F0086B35A /* CJPwdKeyBoard_Header.h */,
 			);
 			path = CJPwdKBManager;
 			sourceTree = "<group>";

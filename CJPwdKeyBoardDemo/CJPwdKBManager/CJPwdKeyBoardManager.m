@@ -9,55 +9,13 @@
 #import "CJPwdKeyBoardManager.h"
 #import "UIView+Frame.h"
 #import "UIButton+EnlargeEdge.h"
-
-#pragma mark --- 宏
-#ifndef weakify
-    #if DEBUG
-        #if __has_feature(objc_arc)
-        #define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
-        #else
-        #define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
-        #endif
-    #else
-        #if __has_feature(objc_arc)
-        #define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
-        #else
-        #define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
-        #endif
-    #endif
-#endif
-
-#ifndef strongify
-    #if DEBUG
-        #if __has_feature(objc_arc)
-        #define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
-        #else
-        #define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
-        #endif
-    #else
-        #if __has_feature(objc_arc)
-        #define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
-        #else
-        #define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
-        #endif
-    #endif
-#endif
-
-
-#define KCJScreenWidth [UIScreen mainScreen].bounds.size.width
-#define KCJScreenHeight [UIScreen mainScreen].bounds.size.height
-#define KCJScreenBounds [UIScreen mainScreen].bounds
-
-// 设置颜色 示例：UIColorHex(0x26A7E8)
-#define UIColorHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
-#define kFontSizeUse(num) [UIFont fontWithName:@"PingFangSC-Regular" size:num]
+#import "CJPwdKeyBoard_Header.h"
 
 #pragma mark -- 键盘
 
 @interface CJPwdKeyBoardManager ()
 
-@property (nonatomic,strong)UIViewController *currentVC;
+@property (nonatomic,strong)UIView *currentView;
 //键盘标题
 @property (nonatomic, copy) NSString *pwdTitle;
 //密码框数组
@@ -84,7 +42,7 @@
     return instance;
 }
 
-- (void)configKeyBoard:(UIViewController *)vc pwdTitle:(NSString *)pwdTitle{
+- (void)configKeyBoard:(UIView *)currentView pwdTitle:(NSString *)pwdTitle {
     
     //初始化配置
     _lastCount = 0;
@@ -93,12 +51,12 @@
     
     _pwdTitle = pwdTitle;
     
-    self.currentVC = vc;
+    self.currentView = currentView;
     
     //创建
     [self creatView];
 
-    [vc.view addSubview:self.tfd];
+    [currentView addSubview:self.tfd];
 }
 
 
@@ -111,7 +69,7 @@
     self.keyBoardView = nil;
     
     
-    self.keyBoardView = [[UIView alloc] initWithFrame:CGRectMake(0, _currentVC.view.bottom, _currentVC.view.size.width,  55+60+54)];
+    self.keyBoardView = [[UIView alloc] initWithFrame:CGRectMake(0, _currentView.bottom, _currentView.width,  55+60+54)];
     self.keyBoardView.backgroundColor = UIColorHex(0xEBEBEB);
     
     //关闭按钮

@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 /*****
  *    使用示例：（控制器使用）
- *      [[CJPwdKeyBoardManager shareInstance] configKeyBoard:self pwdTitle:@"输入服务密码"];
+ *      [[CJPwdKeyBoardManager shareInstance] configKeyBoard:self.view pwdTitle:@"输入服务密码"];
         @weakify(self);
         [CJPwdKeyBoardManager shareInstance].verificationBlock = ^(UITextField *tfd){
          @strongify(self);
@@ -33,9 +33,13 @@ typedef void(^RightItemBlock)();
 +(instancetype)shareInstance;
 
 #pragma mark -- StepOne
+/**
+ *  配置键盘
+ *  vc.view
+ *  标题
+ */
 
-//配置键盘
-- (void)configKeyBoard:(UIViewController *)vc pwdTitle:(NSString *)pwdTitle;
+- (void)configKeyBoard:(UIView *)currentView pwdTitle:(NSString *)pwdTitle;
 
 - (void)configRightItem:(NSString *)rightItemTitle RightItemBlock:(RightItemBlock)rightItemBlock;
 

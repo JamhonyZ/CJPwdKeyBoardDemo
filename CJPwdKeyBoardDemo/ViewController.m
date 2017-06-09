@@ -55,7 +55,7 @@
     [self.view addSubview:_pwdLabel];
     
     //注册
-    [[CJPwdKeyBoardManager shareInstance] configKeyBoard:self pwdTitle:@"测试输入密码"];
+    [[CJPwdKeyBoardManager shareInstance] configKeyBoard:self.view pwdTitle:@"测试输入密码"];
     __weak typeof(self) weakSelf = self;
     [CJPwdKeyBoardManager shareInstance].verificationBlock = ^(UITextField *tfd){
         __strong typeof(weakSelf) strongSelf = weakSelf;
