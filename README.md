@@ -3,7 +3,7 @@
 纯代码布局，简易实现6位交易密码的输入。
 使用步骤：
 
-    [[CJPwdKeyBoardManager shareInstance] configKeyBoard:self pwdTitle:@"测试输入密码"];
+    [[CJPwdKeyBoardManager shareInstance] configKeyBoard:self.view pwdTitle:@"测试输入密码"];
     __weak typeof(self) weakSelf = self;
     [CJPwdKeyBoardManager shareInstance].verificationBlock = ^(UITextField *tfd){
         __strong typeof(weakSelf) strongSelf = weakSelf;
