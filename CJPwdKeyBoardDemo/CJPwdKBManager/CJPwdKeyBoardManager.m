@@ -147,6 +147,7 @@
         //开始验证支付密码
         [self configPsd:_tfd.text];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"发出回调%@",_tfd.text);
             if (self.verificationBlock) {
                 self.verificationBlock(_tfd);
             }
@@ -227,7 +228,7 @@
         [psdNumArr addObject:[text substringWithRange:NSMakeRange(i, 1)]];
     }
     
-   NSLog(@"当前密码:%@",psdNumArr);
+  // NSLog(@"当前密码:%@",psdNumArr);
     
     NSTimeInterval deley = _ifNeedAnimate ? 0.3 : 0;
     
