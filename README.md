@@ -20,3 +20,6 @@
     */
   
 
+-------------- 效果图 ---------------
+
+![image](https://github.com/JamhonyZ/CJPwdKeyBoardDemo/blob/master/CJPwdKeyBoardDemo/result_screen.png)
