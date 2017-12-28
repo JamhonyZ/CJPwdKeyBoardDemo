@@ -17,7 +17,6 @@
 		CDFDE60D1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE60C1EE8DECE005BD6B3 /* CJPwdKeyBoardDemoUITests.m */; };
 		CDFDE61D1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE61C1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m */; };
 		CDFDE6231EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE6201EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m */; };
-		CDFDE6241EE8E02D005BD6B3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFDE6221EE8E02D005BD6B3 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +58,6 @@
 		CDFDE61C1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPwdKeyBoardManager.m; sourceTree = "<group>"; };
 		CDFDE61F1EE8E02D005BD6B3 /* UIButton+EnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeEdge.h"; sourceTree = "<group>"; };
 		CDFDE6201EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
-		CDFDE6211EE8E02D005BD6B3 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		CDFDE6221EE8E02D005BD6B3 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +164,6 @@
 			children = (
 				CDFDE61F1EE8E02D005BD6B3 /* UIButton+EnlargeEdge.h */,
 				CDFDE6201EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m */,
-				CDFDE6211EE8E02D005BD6B3 /* UIView+Frame.h */,
-				CDFDE6221EE8E02D005BD6B3 /* UIView+Frame.m */,
 			);
 			path = CJCategory;
 			sourceTree = "<group>";
@@ -306,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDFDE6241EE8E02D005BD6B3 /* UIView+Frame.m in Sources */,
 				CDFDE5EF1EE8DECD005BD6B3 /* ViewController.m in Sources */,
 				CDFDE61D1EE8DF5B005BD6B3 /* CJPwdKeyBoardManager.m in Sources */,
 				CDFDE6231EE8E02D005BD6B3 /* UIButton+EnlargeEdge.m in Sources */,

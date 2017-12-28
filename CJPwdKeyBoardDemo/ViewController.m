@@ -62,8 +62,8 @@
         strongSelf.pwdLabel.text = tfd.text;
     };
     
-/*
     [CJPwdKeyBoardManager shareInstance].ifNeedAnimate = NO;
+    /*
     [[CJPwdKeyBoardManager shareInstance] configRightItem:@"忘记密码" RightItemBlock:^{
         NSLog(@"忘记密码");
     }];

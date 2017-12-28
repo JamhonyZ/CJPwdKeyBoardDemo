@@ -7,7 +7,6 @@
 //
 
 #import "CJPwdKeyBoardManager.h"
-#import "UIView+Frame.h"
 #import "UIButton+EnlargeEdge.h"
 #import "CJPwdKeyBoard_Header.h"
 
@@ -69,7 +68,7 @@
     self.keyBoardView = nil;
     
     
-    self.keyBoardView = [[UIView alloc] initWithFrame:CGRectMake(0, _currentView.bottom, _currentView.width,  55+60+54)];
+    self.keyBoardView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_currentView.frame), CGRectGetWidth(_currentView.frame),  55+60+54)];
     self.keyBoardView.backgroundColor = UIColorHex(0xEBEBEB);
     
     //关闭按钮
@@ -83,7 +82,7 @@
     
     
     //标题文本
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(80, 0, self.keyBoardView.width-160, 55)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(80, 0, CGRectGetWidth(self.keyBoardView.frame)-160, 55)];
     titleLabel.text = self.pwdTitle;
     titleLabel.textColor = UIColorHex(0x333333);
     titleLabel.font = kFontSizeUse(16);
@@ -92,7 +91,7 @@
     
     
     //密码输入框背景
-    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 55, self.keyBoardView.width, 60+54)];
+    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 55, CGRectGetWidth(self.keyBoardView.frame), 60+54)];
     bottomView.backgroundColor = [UIColor whiteColor];
     [self.keyBoardView addSubview:bottomView];
     
@@ -100,7 +99,7 @@
     self.pswLabelArr = @[].mutableCopy;
     //创建密码框
     CGFloat kLrSpace = 12;  //两边间距
-    CGFloat itemW = (self.keyBoardView.width-kLrSpace*2)/6;  //输入框每一格长度
+    CGFloat itemW = (CGRectGetWidth(self.keyBoardView.frame)-kLrSpace*2)/6;  //输入框每一格长度
     for (int i = 0; i<6; i++) {
         UILabel *label  = [UILabel new];
         label.font = kFontSizeUse(18);
@@ -108,11 +107,11 @@
         label.tag = 100+i;
         label.textAlignment = NSTextAlignmentCenter;
         [bottomView addSubview:label];
-        [label addSubview:[self getLineView:CGRectMake(label.width-1, 0, 1, label.height) color:nil]];
+        [label addSubview:[self getLineView:CGRectMake(CGRectGetWidth(label.frame)-1, 0, 1, CGRectGetHeight(label.frame)) color:nil]];
         if (i == 0) {
-            [bottomView addSubview:[self getLineView:CGRectMake(label.left, label.top, 1, label.height) color:nil]];
-            [bottomView addSubview:[self getLineView:CGRectMake(label.left, label.top, (KCJScreenWidth-2*kLrSpace), 1) color:nil]];
-            [bottomView addSubview:[self getLineView:CGRectMake(label.left, label.bottom-1, (KCJScreenWidth-2*kLrSpace), 1) color:nil]];
+            [bottomView addSubview:[self getLineView:CGRectMake(CGRectGetMinX(label.frame), CGRectGetMinY(label.frame), 1, CGRectGetHeight(label.frame)) color:nil]];
+            [bottomView addSubview:[self getLineView:CGRectMake(CGRectGetMinX(label.frame), CGRectGetMinY(label.frame), (KCJScreenWidth-2*kLrSpace), 1) color:nil]];
+            [bottomView addSubview:[self getLineView:CGRectMake(CGRectGetMinX(label.frame), CGRectGetMaxY(label.frame)-1, (KCJScreenWidth-2*kLrSpace), 1) color:nil]];
         }
         [self.pswLabelArr addObject:label];
     }
@@ -128,7 +127,7 @@
     _rightItemTitle = rightItemTitle;
     
     UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    rightBtn.frame = CGRectMake(self.keyBoardView.width-80, 0, 70, 55);
+    rightBtn.frame = CGRectMake(CGRectGetWidth(self.keyBoardView.frame)-80, 0, 70, 55);
     [rightBtn setTitle:rightItemTitle forState:UIControlStateNormal];
     [rightBtn setTitleColor:UIColorHex(0x333333) forState:UIControlStateNormal];
     rightBtn.titleLabel.font = kFontSizeUse(14);
